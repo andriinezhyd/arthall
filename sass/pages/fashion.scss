@@ -1,10 +1,378 @@
-#wrap-fashion{
-	#header{
-		/*height: 500px;*/
-		/*background: #000;*/
-		
-	}
-	#main{}
-	#footer{}
+html {-webkit-text-size-adjust: none; /* Prevent font scaling in landscape */}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section { display: block; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+img {
+	border-style:none;
+	max-width:100%;
+}
+a {
+	text-decoration:none;
+	&:hover {text-decoration:none;
+	}
+}
+input, textarea, select {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	vertical-align:middle;
+	color:#000;
+	padding:0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+form fieldset {
+	margin:0;
+	padding:0;
+	border:none;
+}
+ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+*:focus {outline: none;}
+input::-webkit-input-placeholder{color:#bebebe;}
+input:focus::-webkit-input-placeholder{color:#bebebe;}
+/***************************************************              GENERAL STYLES             ***************************************************/
+h1 {font: 35px sans-serif;}
+h2 {font: 25px sans-serif;}
+h3 {font: 23px sans-serif;}
+h4 {font: 21px sans-serif;}
+h5 {font: 18px sans-serif;}
+h6 {font: 16px sans-serif;}
+p {}
+strong {}
+/***************************************************** MOBILE **********************************************/
+@media screen and (min-width:320px) {
+	#wrap-fashion{
+		display:block;
+		overflow:hidden;
+		max-width: 1400px;
+		height:100%;
+		margin: 0 auto;
+		position: relative;
+		h1{
+			font-size: 1.2em;
+			text-align: center;
+			margin: 20px 0 0 0;
+			position: relative;
+						z-index: 3;
+		}
+		h2{
+			font-size: 0.8em;
+			font-weight: bold;
+			text-transform: uppercase;
+			padding: 0.4em 0;
+			text-align: center;
+			position: relative;
+						z-index: 3;
+		}
+		#header{
+			display: block;
+			width: 100%;
+			top: 0;
+			background: url(../images/bg-header.png) no-repeat;
+			background-size: 100%;
+			background-position: 50% 0%;
+			padding: 0 0 20px 0;
+			#logo{	
+				display: block;
+				margin: 0 auto;
+				width: 43%;
+				height: auto;
+				padding: 0 0 0 73px;
+				cursor: pointer;
+			}
+			div.tel{display: none;}
+			
+		}
+		ul.topnav{
+			display: block;
+			justify-content: center;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #fff;
+			li {
+				text-align: center;
+				a {
+					display: block;
+					color: #000;
+					width: 100%;
+					text-align: center;
+					padding: 14px 16px;
+					text-decoration: none;
+					transition: 0.3s;
+					font-size: 17px;
+					&:hover {background-color: #F3F5F6;}
+				}
+			}
+		}
+		#main{
+			#content{
+				position: relative;
+				img{display: none;}
+				div{
+					margin: 120px 0 100px;
+					position: relative;
+					/*z-index: 3;*/
+					padding: 0 5%;
+					img{
+						display: block;
+						width: 50%;
+						position: absolute;
+					}
+					p{	
+						position: relative;
+						z-index: 3;
+						text-align: justify;
+					}
+				}
+				
+				.start{
+					display: block;
+					width: 80%;
+					margin: 0 auto;
+					padding: 30px 0 0 0;
+					text-align: center;
+					font-size: 1.2em;
+					img{
+						position: relative;
+						width: 80%;
+						height:auto;
+						margin: 0 auto;
+					}
+					p{
+						margin: 10px 0;
+					}
+					a{
+						display: block;
+						line-height: 60px;
+						background: #96d3ba;
+						width: 80%;
+						text-transform: uppercase;
+						font-size: 0.8em;
+						margin: 0 auto;
+						color: #fff;
+
+					}
+				}
+				div.item-1{
+					margin: 15px 0;
+					img{
+						position: relative;
+						display: block;
+						width: 50%;
+						margin: 0 auto;
+						padding: 10px 0 0 -10px;
+					}
+				}
+				.item-2{margin-top: 0;}
+				div.item-3{
+					margin-top: 150px;
+					h2{
+						text-align: left;						
+					}					
+					img{						
+						right: 0;
+						top: -90px;
+					}
+				}
+				.item-4{
+					h2{
+						text-align: right;						
+					}					
+					img{						
+						left: 0;
+						top: -90px;
+					}
+					p{
+						text-align: center;
+						span.str-1{
+							display: block;
+							margin:  0 0 0 40%;
+							box-sizing: border-box;
+						}
+						span.str-2{padding:  0 0 0 30%;}
+						span.str-3{padding:  0 0 0 15%;}
+					}
+				}
+				.item-5{
+					margin: 0px 0 100px;
+
+					h2{
+						margin-top: -20px;
+						text-align: left;						
+					}					
+					img{						
+						right: 0;
+						top: -20px;
+					}
+					p{
+						text-align: left;
+						span.str-1{padding:  0 40% 0 0;
+							display: block;}
+							span.str-2{padding:  0 30% 0 0;
+								display: block;}
+								span.str-3{padding:  0 15% 0 0;
+									display: block;}
+								}
+							}
+				.item-6{
+					margin: 0px 0 100px;
+							top:-25px;
+					h2{
+						/*margin-top: -70px;*/
+						text-align: right;						
+					}					
+					img{						
+						left: 0;
+						top: 0;
+					}
+					p{
+						margin-left: 50%;
+						text-align: left;
+						span.str-1{padding:  0 0 40% 0;
+							display: block;}
+							span.str-2{padding:  0 0 30% 0;
+								display: block;}
+								span.str-3{padding: 0 0 15% 0;
+									display: block;}
+								}
+				}
+				.item-7{
+					margin: 0;
+					top: -40px;
+					h2{
+						margin-top: -20px;
+						text-align: left;						
+					}					
+					img{						
+						right: 0;
+						top: -20px;
+					}
+					p{
+						text-align: left;
+						span.str-1{padding:  0 40% 0 0;
+							display: block;}
+							span.str-2{padding:  0 30% 0 0;
+								display: block;}
+								span.str-3{padding:  0 45% 0 0;
+									display: block;}
+								}
+							
+				}
+				.item-8{
+					margin: 0 0 50px 0;
+					img{
+						position: relative;
+						width: 60%;
+						height:auto;
+						margin: 0 auto;
+					}
+					p{margin-bottom: 20px;}
+					a{
+						display: block;
+						line-height: 60px;
+						background: #ff0066;
+						width: 80%;
+						text-transform: uppercase;
+						font-size: 0.8em;
+						margin: 0 auto;
+						color: #fff;
+						text-align: center;
+
+					}
+				}
+				.item-9{
+					margin: 0;
+					img{
+						display: block;
+						position: relative;
+						width: 90%;
+						height:auto;
+						margin: 0 auto 20px;
+					}
+					p{margin-bottom: 20px;}
+					a{
+						display: block;
+						line-height: 60px;
+						background: #ff0096;
+						width: 80%;
+						text-transform: uppercase;
+						font-size: 0.8em;
+						margin: 0 auto;
+						color: #fff;
+						text-align: center;
+
+					}
+				}
+				.item-10{
+					h1{
+						text-transform: uppercase;
+						margin-bottom: 10px;
+						font-weight: bold;
+					}
+					h2{
+						padding: 10px 0;
+						line-height: 1.5em;
+					}
+					ul{
+						padding: 0 20%;
+						text-align: left;
+						margin-bottom: 20px;
+						li {
+							line-height: 2em;
+							padding-left: 35px;
+							background: url(../images/f-order.png) no-repeat left center;
+							background-size: 20px 20px;
+						}
+					}
+					p{text-align: center;}
+					
+				}
+			}
+		}
+		#footer{
+			display:block;
+			width:100%;
+			height: 120px;
+			overflow:hidden;
+			margin:0 0 0 0;
+			padding:0 0;
+			background: url(../images/bg-footer.png) no-repeat;
+			background-size:100%;
+			background-position: 50% 100%;
+		}
+	}
+}
+/********************************************************* @media (min-width: 481px)*****/
+@media screen and (min-width: 481px) {}
+/********************************************************* @media (max-width: 768px)*****/
+@media screen and (max-width:768px) {}
+/*******************************************************  TABLET  ***********************************************/
+@media (min-width: 769px) {}
+/***********************************************     PC    ***************************************************/
+@media (min-width: 979px) {}
+/*********************************************   LARGE PC    ***************************************/
+@media (min-width: 1100px) and(max-width: 1400px){}
+/*********************************************   LARGE XXL PC    ***************************************/
+@media (min-width: 1401px){}
 
