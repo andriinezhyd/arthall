@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 html {
   -webkit-text-size-adjust: none;
   /* Prevent font scaling in landscape */ }
@@ -89,7 +91,9 @@ h6 {
     max-width: 1400px;
     height: 100%;
     margin: 0 auto;
-    position: relative; }
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em; }
     #wrap-fashion h1 {
       font-size: 1.2em;
       text-align: center;
@@ -143,7 +147,26 @@ h6 {
           #wrap-fashion ul.topnav li a:hover {
             background-color: #F3F5F6; }
     #wrap-fashion #main #content {
-      position: relative; }
+      position: relative;
+      /*╨Ъ╨╛╨╜╤В╨╡╨╣╨╜╨╡╤А ╤Б ╤Д╨╛╨╜╨╛╨╝ ╨╕ ╤В╨╡╨║╤Б╤В╨╛╨╝*/
+      /* ╨б╤В╨╕╨╗╨╕ ╤Д╨╛╤А╨╝╤Л */
+      /*╨б╤В╨╕╨╗╨╕ ╨┐╨╛╨╗╨╡╨╣ ╨┤╨╗╤П ╨▓╨▓╨╛╨┤╨░*/
+      /* #zayavkaName, #applicationEmail, #applicationTelephone {
+      	width: 85%;
+      	height: auto;
+      	background: none;
+      	margin-bottom: 18px;
+      	border: 1px solid #fff;
+      	border-radius: 5px;
+      	text-align: center;
+      	color: #000;
+      	font-size: 20px;
+      	line-height: 40px;
+      	background: #fff;
+      } */
+      /*╨б╤В╨╕╨╗╨╕ ╨┐╨╛╨╗╨╡╨╣ ╨┐╤А╨╕ ╨║╨╗╨╕╨║╨╡ ╨┐╨╛ ╨╜╨╕╨╝*/
+      /*╨б╤В╨╕╨╗╨╕ ╤В╨╡╨║╤Б╤В╨░, ╨▓╤Л╨▓╨╛╨┤╤П╤Й╨╡╨│╨╛╤Б╤П ╨▓ placeholder*/
+      /*╨б╤В╨╕╨╗╨╕ ╨┤╨╗╤П ╨║╨╜╨╛╨┐╨║╨╕*/ }
       #wrap-fashion #main #content img {
         display: none; }
       #wrap-fashion #main #content div {
@@ -165,7 +188,7 @@ h6 {
         margin: 0 auto;
         padding: 30px 0 0 0;
         text-align: center;
-        font-size: 1.2em; }
+        /*font-size: 1em;*/ }
         #wrap-fashion #main #content .start img {
           position: relative;
           width: 80%;
@@ -175,13 +198,14 @@ h6 {
           margin: 10px 0; }
         #wrap-fashion #main #content .start a {
           display: block;
-          line-height: 60px;
-          background: #96d3ba;
-          width: 80%;
+          line-height: 43px;
+          background: #ff0066;
+          width: 100%;
           text-transform: uppercase;
           font-size: 0.8em;
           margin: 0 auto;
-          color: #fff; }
+          color: #fff;
+          border-radius: 5px; }
       #wrap-fashion #main #content div.item-1 {
         margin: 15px 0; }
         #wrap-fashion #main #content div.item-1 img {
@@ -285,14 +309,15 @@ h6 {
           margin-bottom: 20px; }
         #wrap-fashion #main #content .item-8 a {
           display: block;
-          line-height: 60px;
+          line-height: 43px;
           background: #ff0066;
-          width: 80%;
+          width: 100%;
           text-transform: uppercase;
           font-size: 0.8em;
           margin: 0 auto;
           color: #fff;
-          text-align: center; }
+          text-align: center;
+          border-radius: 5px; }
       #wrap-fashion #main #content .item-9 {
         margin: 0; }
         #wrap-fashion #main #content .item-9 img {
@@ -305,14 +330,15 @@ h6 {
           margin-bottom: 20px; }
         #wrap-fashion #main #content .item-9 a {
           display: block;
-          line-height: 60px;
+          line-height: 43px;
           background: #ff0096;
-          width: 80%;
+          width: 100%;
           text-transform: uppercase;
           font-size: 0.8em;
           margin: 0 auto;
           color: #fff;
-          text-align: center; }
+          text-align: center;
+          border-radius: 5px; }
       #wrap-fashion #main #content .item-10 h1 {
         text-transform: uppercase;
         margin-bottom: 10px;
@@ -331,6 +357,101 @@ h6 {
           background-size: 20px 20px; }
       #wrap-fashion #main #content .item-10 p {
         text-align: center; }
+      #wrap-fashion #main #content .f-form {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 60px 0;
+        background: #f4f4f4;
+        font-family: 'Roboto', sans-serif;
+        /*font-family: 'PT Sans', sans-serif;*/
+        /*text-shadow: 0 1px 1px rgba(0, 0, 0, .3);*/
+        text-align: center; }
+        #wrap-fashion #main #content .f-form h3 {
+          font-size: 1.2em;
+          color: #000;
+          font-weight: bold;
+          text-transform: uppercase;
+          margin-bottom: 10px; }
+        #wrap-fashion #main #content .f-form p {
+          font-size: 1em;
+          color: #000;
+          line-height: 24px;
+          padding: 0 30px 30px;
+          text-align: center; }
+        #wrap-fashion #main #content .f-form #zayavkaName, #wrap-fashion #main #content .f-form #applicationEmail, #wrap-fashion #main #content .f-form #applicationTelephone {
+          width: 85%;
+          height: auto;
+          background: none;
+          margin-bottom: 14px;
+          border: 1px solid #fff;
+          border-radius: 5px;
+          text-align: center;
+          color: #000;
+          font-size: 0.8em;
+          line-height: 40px;
+          background: #fff; }
+      #wrap-fashion #main #content #application {
+        width: 100%;
+        margin: 0 auto; }
+      #wrap-fashion #main #content #zayavkaName:focus, #wrap-fashion #main #content #applicationEmail:focus, #wrap-fashion #main #content #applicationTelephone:focus {
+        border: 1px solid #ff0066; }
+      #wrap-fashion #main #content ::-webkit-input-placeholder {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        color: #ccc;
+        text-align: left;
+        padding-left: 20px; }
+      #wrap-fashion #main #content ::-moz-placeholder {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        color: #ccc;
+        text-align: left;
+        padding-left: 20px; }
+      #wrap-fashion #main #content :-moz-placeholder {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        color: #ccc;
+        text-align: left;
+        padding-left: 20px; }
+      #wrap-fashion #main #content :-ms-input-placeholder {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        color: #ccc;
+        text-align: left;
+        padding-left: 20px; }
+      #wrap-fashion #main #content ::placeholder {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        color: #ccc;
+        text-align: left;
+        padding-left: 20px; }
+      #wrap-fashion #main #content .applicationButton {
+        margin-top: 25px;
+        background: #ff0066;
+        border: none;
+        width: 85%;
+        height: auto;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 1em;
+        line-height: 43px;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        cursor: pointer;
+        transition: .6s; }
+      #wrap-fashion #main #content .applicationButton:hover {
+        background: #ff3333;
+        transition: .6s; }
+      #wrap-fashion #main #content .moreOption {
+        width: 100%;
+        margin: 0 auto 10px;
+        overflow: hidden; }
+        #wrap-fashion #main #content .moreOption span {
+          float: left;
+          /*font-family: 'PT Sans';*/
+          font-size: 1em;
+          line-height: 1.5; }
+      #wrap-fashion #main #content .adapt, #wrap-fashion #main #content .seo, #wrap-fashion #main #content .tPlan {
+        float: right;
+        margin-right: 30%; }
+      #wrap-fashion #main #content .tPlan {
+        margin-top: 7px; }
     #wrap-fashion #footer {
       display: block;
       width: 100%;
