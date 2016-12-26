@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 html {
   -webkit-text-size-adjust: none;
   /* Prevent font scaling in landscape */ }
@@ -10,7 +11,8 @@ figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, su
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  font-family: 'Roboto', sans-serif; }
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -86,24 +88,44 @@ h6 {
   #wrapper {
     display: block;
     overflow: hidden;
-    max-width: 1400px;
     height: 100%;
     margin: 0 auto;
-    position: relative; }
+    position: relative;
+    background: url(../images/bg-header.png) no-repeat;
+    background-size: 100%;
+    background-position: 50% 0%;
+    font-family: 'Roboto', sans-serif; }
     #wrapper #header {
       display: block;
       width: 100%;
-      top: 0;
-      background: url(../images/bg-header.png) no-repeat;
-      background-size: 100%;
-      background-position: 50% 0%;
+      position: relative;
       padding: 0 0 20px 0; }
+      #wrapper #header .social {
+        position: absolute;
+        left: 50%;
+        bottom: 20px;
+        text-align: left;
+        line-height: 24px;
+        margin-left: -67px; }
+        #wrapper #header .social ul.social-icons li {
+          float: left; }
+          #wrapper #header .social ul.social-icons li a {
+            color: #434242; }
+            #wrapper #header .social ul.social-icons li a:hover i {
+              color: #ff0066; }
+          #wrapper #header .social ul.social-icons li:nth-child(2) {
+            margin-top: 0px; }
+          #wrapper #header .social ul.social-icons li:nth-child(3) {
+            margin-top: 0px; }
+          #wrapper #header .social ul.social-icons li:nth-child(4) {
+            margin-top: 0px; }
+        #wrapper #header .social p {
+          margin-bottom: 10px; }
       #wrapper #header #logo {
         display: block;
         margin: 0 auto;
         width: 43%;
         height: auto;
-        padding: 0 0 0 73px;
         cursor: pointer; }
       #wrapper #header div.tel {
         display: none; }
@@ -125,9 +147,11 @@ h6 {
           padding: 14px 16px;
           text-decoration: none;
           transition: 0.3s;
-          font-size: 17px; }
+          font-size: 17px;
+          font-weight: bold; }
           #wrapper ul.topnav li a:hover {
-            background-color: #F3F5F6; }
+            color: #ff0066;
+            letter-spacing: 1px; }
     #wrapper #main {
       display: block;
       width: 100%;
@@ -147,10 +171,44 @@ h6 {
       height: 120px;
       overflow: hidden;
       margin: 0 0 0 0;
-      padding: 0 0;
+      padding: 15% 0 0 0;
       background: url(../images/bg-footer.png) no-repeat;
       background-size: 100%;
-      background-position: 50% 100%; } }
+      background-position: 50% 100%; }
+      #wrapper #footer p {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        position: relative;
+        top: -26%;
+        font-size: .9em;
+        font-family: 'Roboto', sans-serif; }
+        #wrapper #footer p a {
+          line-height: 20px;
+          color: #ff0066;
+          font-weight: bold;
+          font-family: 'Roboto', sans-serif; }
+      #wrapper #footer .second {
+        display: block;
+        position: absolute;
+        right: 6%;
+        bottom: 1%;
+        text-align: left;
+        line-height: 24px; }
+        #wrapper #footer .second ul.social-icons li {
+          float: left; }
+          #wrapper #footer .second ul.social-icons li a {
+            color: #434242; }
+            #wrapper #footer .second ul.social-icons li a:hover i {
+              color: #ff0066; }
+          #wrapper #footer .second ul.social-icons li:nth-child(2) {
+            margin-top: 0px; }
+          #wrapper #footer .second ul.social-icons li:nth-child(3) {
+            margin-top: 0px; }
+          #wrapper #footer .second ul.social-icons li:nth-child(4) {
+            margin-top: 0px; }
+        #wrapper #footer .second p {
+          margin-bottom: 10px; } }
 /********************************************************* @media (min-width: 481px)*****/
 @media screen and (min-width: 481px) {
   #wrapper #main #content img {
@@ -161,7 +219,9 @@ h6 {
     #wrapper #main #content img:nth-child(3) {
       margin: -10px 0 -10px; }
   #wrapper #footer {
-    padding: 75px 0 0 0; } }
+    padding: 26% 0 0 0; }
+    #wrapper #footer p {
+      top: -88%; } }
 /********************************************************* @media (max-width: 768px)*****/
 @media screen and (max-width: 768px) {
   ul.topnav.responsive {
@@ -189,35 +249,65 @@ h6 {
     background-size: contain; } }
 /*******************************************************  TABLET  ***********************************************/
 @media (min-width: 769px) {
-  #wrapper #header {
-    padding: 0 0 30px 0; }
-    #wrapper #header div.tel {
-      display: block;
-      width: 38%;
-      position: absolute;
-      top: 65px;
-      right: 10px;
-      text-align: center;
-      text-transform: uppercase; }
-      #wrapper #header div.tel p {
-        font-size: 0.75em; }
-        #wrapper #header div.tel p span {
-          display: inline-block;
-          font-family: "";
-          font-size: 1.6em;
-          margin-bottom: 10px;
-          font-weight: bold; }
-    #wrapper #header a.to_nav {
-      display: none; }
-    #wrapper #header #logo {
-      margin: 0 0 0 8vh;
-      padding: 0; }
+  #wrapper #header .social {
+    display: block !important;
+    position: absolute;
+    left: 10vh;
+    top: 25%;
+    text-align: left;
+    line-height: 24px;
+    margin-left: 0; }
+    #wrapper #header .social ul.social-icons li {
+      float: left; }
+      #wrapper #header .social ul.social-icons li a {
+        color: #434242; }
+        #wrapper #header .social ul.social-icons li a:hover i {
+          color: #ff0066; }
+      #wrapper #header .social ul.social-icons li:nth-child(2) {
+        margin-top: 0px; }
+      #wrapper #header .social ul.social-icons li:nth-child(3) {
+        margin-top: 0px; }
+      #wrapper #header .social ul.social-icons li:nth-child(4) {
+        margin-top: 0px; }
+    #wrapper #header .social p {
+      margin-bottom: 10px; }
+  #wrapper #header #logo {
+    width: 25%;
+    margin: 0 auto; }
+  #wrapper #header div.tel {
+    display: block;
+    width: 38%;
+    position: absolute;
+    top: 25%;
+    right: 3vh;
+    text-align: center;
+    text-transform: uppercase; }
+    #wrapper #header div.tel p {
+      font-size: 12px;
+      font-family: 'Roboto', sans-serif;
+      color: #434242; }
+      #wrapper #header div.tel p a {
+        display: inline-block;
+        font-family: "";
+        font-size: 21px;
+        letter-spacing: 0.025em;
+        margin-bottom: 4px;
+        font-weight: bold;
+        color: #434242;
+        font-family: 'Roboto', sans-serif; }
+        #wrapper #header div.tel p a:hover {
+          color: #ff0066; }
+  #wrapper #header a.to_nav {
+    display: none; }
   #wrapper ul.topnav {
     display: flex;
     height: 100%;
-    margin: -70px 0 30px;
+    margin: -25px 0 30px;
     background-color: rgba(255, 255, 255, 0); }
   #wrapper #main #content img {
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
     width: 50%;
     height: auto; }
     #wrapper #main #content img:first-child {
@@ -228,27 +318,36 @@ h6 {
       float: none;
       width: 100%;
       margin: 0; }
+    #wrapper #main #content img:hover {
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      -o-transform: scale(1.05); }
   #wrapper #footer {
-    padding: 140px 0 0 0; } }
+    padding: 140px 0 0 0; }
+    #wrapper #footer .second {
+      display: none;
+      position: relative;
+      right: 0;
+      top: 0; }
+    #wrapper #footer p {
+      top: -115%; } }
 /***********************************************     PC    ***************************************************/
 @media (min-width: 979px) {
-  #wrapper #header div.tel {
-    width: 20%;
-    top: 65px;
-    right: 80px; }
-    #wrapper #header div.tel p {
-      font-size: 0.75em; }
-      #wrapper #header div.tel p span {
-        display: inline-block;
-        font-family: "";
-        font-size: 1.6em;
-        margin-bottom: 10px;
-        font-weight: bold;
-        letter-spacing: 2px; }
-  #wrapper #header #logo {
-    margin: 0 auto;
-    padding: 0 0 0 73px; }
+  #wrapper #header {
+    /* div.tel{
+    	// width: 20%;
+    	// top: 65px;
+    	// right: 80px;
+    	p{
+    		font-size: 12px;
+    		
+    	}
+    } */ }
+    #wrapper #header #logo {
+      margin: 0 auto; }
   #wrapper ul.topnav {
+    position: relative;
+    margin: -80px 0 100px;
     display: flex;
     height: 100%; }
   #wrapper #main #content img {
@@ -266,14 +365,12 @@ h6 {
     padding: 160px 0 0 0; } }
 /*********************************************   LARGE PC    ***************************************/
 @media (min-width: 1100px) and (max-width: 1400px) {
-  #wrapper #header div.tel {
-    top: 95px; }
   #wrapper #footer {
-    padding: 250px 0 0 0; } }
+    padding: 250px 0 0 0; }
+    #wrapper #footer p {
+      top: -25%; } }
 /*********************************************   LARGE XXL PC    ***************************************/
 @media (min-width: 1401px) {
-  #wrapper #header div.tel {
-    top: 95px; }
   #wrapper #footer {
     padding: 300px 0 0 0; } }
 

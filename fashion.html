@@ -3,144 +3,354 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="shortcut icon" href="images/favicon.png" type="image/png">	
 	<link rel="stylesheet" href="css/all.css"/>
+	<link rel="stylesheet" href="css/fontello.css">
+	<link rel="stylesheet" href="css/remodal.css">
+	<link rel="stylesheet" href="css/remodal-default-theme.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<title>Fashion</title>
 </head>
 <body>
+	<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter41782759 = new Ya.Metrika({
+                    id:41782759,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/41782759" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-89346867-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<!--  Создаём кнопку возврата вверх страницы -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 1000) {
+					$('.scrollup').fadeIn();
+				} else {
+					$('.scrollup').fadeOut();
+				}
+			});
+
+			$('.scrollup').click(function(){
+				$("html, body").animate({ scrollTop: 0 }, 600);
+				return false;
+			});
+
+		});
+	</script>
 	<div id="wrap-fashion">
 		<div id="header">
-			<img id="logo" src="images/logo.png" alt="">
+			<div class="social">
+				<ul class="social-icons">
+					<li><a href="https://www.instagram.com/sketching_art_hall/" target="_blank"><i class="icon-instagram"></i></a></li>
+					<li><a href="#" target="_blank"><i class="icon-facebook"></i></i></a></li>
+					<li><a href="https://vk.com/arthallkharkov" target="_blank"><i class="icon-vkontakte"></i></a></li>
+					<li><a href="#" target="_blank"><i class="icon-youtube"></i></a></li>
+				</ul>
+			</div>
+			<img id="logo" src="images/logo.png" alt="" onClick="window.location='http://art-hall.in.ua/'" style="cursor:pointer">
 			<div class="tel">
-				<p><span>+38(068)532-19-82</span><br>c 10:00 до 21:00 ВC - выходной</p>
+				<p><a href="tel: +380685321982">+38(068)532-19-82</a><br>c 10:00 до 21:00 ВC - выходной</p>
 			</div>
 			<a class="to_nav" href="#primary_nav" onclick="myFunction()">Menu</a>
 		</div>
 		<ul class="topnav" id="myTopnav">
-			<li><a href="#">главная</a></li>
-			<li><a href="#">интерьерный скетчинг</a></li>
+			<li><a href="index.html">главная</a></li>
+			<li><a href="#">interior sketching</a></li>
 			<li><a href="#">живопись</a></li>
 			<li><a href="#contact">контакты</a></li>
 		</ul>
-		<div id="main">
-			<div id="content">
-				<div class="start">
+		<div id="main">			
+			<div class="start">
+				<img id="fs" src="images/fs-start.png" alt="" style="    width: 45%; padding-bottom: 6%; margin: 0 auto; padding-right: 11%;"  >
+				<img src="images/fs-start-2.png" alt="">
+				<div class="content">
 					<img src="images/f-label.png" alt="">
-					<p>СТАРТ КУРСА 9 января<br> Курс из 12 занятий для начинающих и практикующих дизайнеров по созданию fashion-скетчей.</p>
-					<a href="">Подробнее о курсе</a>
-				</div>
-
-				<div class="item-1">
+					<p><b>СТАРТ КУРСА 9 января</b><br> Курс из 12 занятий для начинающих и практикующих дизайнеров по созданию fashion-скетчей.</p>
+					<a href="#form">Записаться на курс</a>
+				</div>					
+			</div>
+			<div class="item-1">
+				<div class="content">
 					<img src="images/f-girl-1.png" alt="">
 					<h1>СКЕТЧИНГ? ЧТО ЭТО И ЗАЧЕМ?</h1>
 					<h2></h2>
-					<p>Скетчинг - как краткое изложение, оно дает представление о том, что вы хотите видеть. 
-						Fashion-скетчинг – это самостоятельное направление, важная часть дизайнерского процесса, которая позволяет коммуницировать с заказчиком и передает суть коллекции.</p>
+					<p>Скетчинг — как краткое изложение, оно дает представление о том, что вы хотите видеть. 
+						Fashion-скетчинг – это самостоятельное направление, важная часть дизайнерского процесса, которая позволяет коммуницировать с заказчиком и передает суть коллекции.
+					</p>
+				</div>
+			</div>
+			<div class="item-2">
+				<img src="images/f-pudra.png" alt="">
+				<div class="content">
+					<h1>ЧТО ТЫ ОСВОИШЬ?</h1>
+					<h2></h2>
+					<p>Данный курс подходит как для начинающих, так и практикующих дизайнеров, которые хотят научиться  быстро и реалистично переносить свои идеи на бумагу. </p>
+				</div>
+			</div>
+			<div class="item-3">
+				<div class="content">
+					<img src="images/f-clothes.png" alt="">
+					<h2>Комбинирование материалов</h2>
+					<ul>
+						<li>— Принцип работы маркеров и акварели</li>
+						<li>— Виды стилизации</li>
+						<li>— Как делать равномерные заливки</li>
+						<li>— Разбор 10 главных ошибок при создании скетча</li>
+					</ul>
+				</div>
+			</div>
+			<div class="item-4">
+				<div class="content">
+					<img src="images/f-girls.png" alt="">
+					<h1></h1>
+					<h2>Позировки</h2>
+					<ul>
+						<li>— Освоишь fashion-пропорции тела</li>
+						<li>— Научишься рисовать моделей в движении и статике</li>
+						<li>— Узнаешь что такое линия баланса и как рисовать мужские, женские и детские фигуры</li>
+					</ul>
+				</div>
+			</div>
+			<div class="item-5">
+				<img src="images/f-paints.png" alt="">
+				<div class="content">
+					<h2>Подбор цветов согласно колористике</h2>
+					<ul>
+						<li>— Глубина цвета, его характеристик и психоэмоциональное влияние</li>
+						<li>— Проработка свето-тени</li>
+						<li>— Выделение объема</li>
+					</ul>
+				</div>
+			</div>
+			<div class="item-6">
+				<img src="images/f-brush.png" alt="">
+				<div class="content">
+					<h2>Текстуры и фактуры тканей</h2>
+					<ul>
+						<li>— Легкие летние ткани</li>
+						<li>— Джинс, драпировка</li>
+						<li>—  Гипюр и шикарное кружево</li>
+						<li>— Изделия из меха и кожи</li>
+					</ul>
+				</div>
+			</div>
+			<div class="item-7">
+				<div class="content">
+					<img src="images/f-girls1.png" alt="">
+					<h2>Создашь коллекцию</h2>
+					<ul>
+						<li>— Узнаешь, как правильно оформлять проект</li>
+						<li>— Сделаешь свою fashion collection</li> 
+						<li>— Выработаешь собственный стиль</li>
+					</ul>
+				</div>
+			</div>
+			<a class="button mybtn" href="presentation.pdf" download>Программа курса</a>
+			<div class="item-8">
+				<img src="images/f-smear.png" id="pic-8-1" alt="">
+				<div class="content">
+					<h1>В РЕЗУЛЬТАТЕ ?</h1>
+					<p>Ты сможешь развить свои навыки рисования, и научиться делать профессиональные счетчи, которые позволят в точности воплощать твои идеи в реальность.</p>
+					<img src="images/f-legs.png" alt="">
+					<a href="#form">Записаться на курс</a>
+				</div>
+				<img src="images/f-candies.png" id="pic-8-2" alt="">
+			</div>
+			<div class="item-9">
+				<div class="content">
+					<h1>КАКИЕ МАТЕРИАЛЫ НУЖНЫ?</h1>
+					<h2></h2>
+					<p>Мы будем рисовать акварелью, тушью, пастелью,  маркерами и обязательно захвати хорошее настроение!</p>
+					<img src="images/f-markers.png" alt="">
+					<span>Хотите получить подобный список материалов на E-mail?</span>
+					<a href="#modal">Да, вышлите список!</a>
+				</div>
+			</div>
+			<div class="item-10">
+			<img src="images/f-candies-1.png" alt="">
+				<div class="content">
+					<h1>Расписание занятий</h1>
+					<h2>старт курса - 9.01 / окончание - 11.02<br><span>12 занятий — 2 раза в неделю — по 2 часа</span></h2>
+					<ul>
+						<li class="group-1">ВТ, ЧТ 18:00 - 20:00</li>
+						<li class="group-2">ПТ 19:00 - 21:00, СБ 16:00 - 18:00</li>
+						<li class="group-3">СБ 16:00 - 18:00</li>
+					</ul>
+					<p>Курс состоит из 12 занятий и длится 5 недель</p>
+					
+				</div>
+			</div>
+			<div class="item-11">
+			<img src="images/f-blot.png" alt="" style="display: none;">
+			<img src="images/f-blot-1.png" alt="" style="display: none;">
+				<div class="sub-item-t1">
+					<div class="title">
+						<p class="title">ИНДИВИДУАЛЬНОЕ ОБУЧЕНИЕ
+							<br>12 занятий по 2 часа<br><span>узнать больше...</span></p>
+					</div>					
+					<div class="info-t1">
+						<ul>
+							<li>1. Входит полная программа основного курса.</li>
+							<li>2. Выбор удобного графика занятий.</li>
+							<li>3. Глубокая проработка всего материала.</li>
+							<li>4. Индивидуальная программа обучения под ваши цели;</li>
+							<li>5. Работа с преподавателем 1 на 1;</li>
+							<li>6. Личный чат и прямой контакт с преподавателем для вопросов;</li>
+							<li>7. Возможность выбирать любой объем нагрузки</li>
+							<li>*Для прохождения индивидуального курса необходимо пройти собеседование с преподавателем.</li>
+						</ul><br>
+						<span style="text-decoration: line-through;">12000грн.</span><br>
+						<span>10000грн.</span><br>
+						<span>(Стоимость при оплате до 31 января)</span>
 					</div>
-					<img src="images/f-pudra.png" alt="">
-					<div class="item-2">
-						<h1>ЧТО ТЫ ОСВОИШЬ?</h1>
-						<h2></h2>
-						<p>Данный курс подходит как для начинающих, так и практикующих дизайнеров, которые хотят научиться  быстро и реалистично переносить свои идеи на бумагу. </p>
+				</div>
+				<div class="sub-item-t2">
+					<div class="title">
+						<p class="title">КУРС fashion sketching
+					<br>12 занятий по 2 часа<br><span>узнать больше...</span></p>
+					</div>					
+					<div class="info-t2">
+						<ul>
+							<li>1. Узнаешь все о метериалах для  для скетчинга и особеностях раробы с ними.</li>
+							<li>2. Научишся строить и рисовать статические, а так же динамические фигуры. </li>
+							<li>3. Освоишь текстуры различных материалов. </li>
+							<li>4. Поймёшь, как правильно подбирать цветовую гамму коллекции. </li>
+							<li>5. Отработаешь техники и разные эффекты при работе с маркерами. </li>
+							<li>6. Научишься придавать объём фигуре. </li>
+							<li>7. Создашь свою собственную  fashion коллекцию. </li>
+							<li>*Для прохождения индивидуального курса необходимо пройти собеседование с преподавателем.</li>
+						</ul><br>
+						<span style="text-decoration: line-through;">2500грн.</span><br>
+						<span>1750грн.</span><br>
+						<span>(Стоимость при оплате до 31 января)</span>
 					</div>
-					<div class="item-3">
-						<img src="images/f-clothes.png" alt="">
-						<h1></h1>
-						<h2>Комбинирtование материалов</h2>
-						<p>— Принцип работают маркеров и акварели<br>
-							— Виды стилизации<br>
-							— Как делать равномерные заливки<br>
-							— Разбор 10 главных ошибок при сосдании скейча</p>
-						</div>
-						<div class="item-4">
-							<img src="images/f-girls.png" alt="">
-							<h1></h1>
-							<h2>Позировки</h2>
-							<p><span class="str-1">— Освоишь фэшен-пропорции тела</span>
-								<span class="str-2">— Научишься рисовать моделей в движении и статике</span><br>
-								<span class="str-3">— Узнаешь что такое линия баланса и как рисовать мужские, женские и детские фигуры</span></p>
-							</div>
-							<div class="item-5">
-								<img src="images/f-paints.png" alt="">
-								<h1></h1>
-								<h2>Подбор цветов согласно колористике</h2>
-								<p>
-									<span class="str-1">— Глубина цвета, его характеристик и психоэмоциональное влияние</span>
-									<span class="str-2">— Проработка свето-тени</span>
-									<span class="str-3">— Выделение объема</span></p>
-								</div>
-								<div class="item-6">
-									<img src="images/f-brush.png" alt="">
-									<h1></h1>
-									<h2>Текстуры и фактуры тканей</h2>
-									<p>
-										— Легкие летние ткани<br>
-										— Джинс, драпировка<br>
-										—  Гипюр и шикарное кружево<br>
-										— Изделия из меха и кожи</p>
-								</div>
-								<div class="item-7">
-										<img src="images/f-girls1.png" alt="">
-										<h1></h1>
-										<h2>Создашь коллекцию</h2>
-										<p><span class="str-1">— Узнаешь, как правильно оформлять проект</span>
-											<span class="str-2">— Сделаешь свою fashion collection</span> 
-											<span class="str-3">— Выработаешь собственный стиль</span></p>
-								</div>
-								<div class="item-8">
-											<h1>В РЕЗУЛЬТАТЕ ?</h1>
-											<h2></h2>
-											<p>Ты сможешь развить свои навыки рисования, и научится делать профессиональные счетчи, которые позволят в точности воплощать твои идеи в реальность.</p>
-											<img src="images/f-legs.png" alt="">
-											<a href="#">Записаться на курс</a>
-								</div>
-								<div class="item-9">
-											<h1>КАКИЕ МАТЕРИАЛЫ НУЖНЫ?</h1>
-											<h2></h2>
-											<p>Мы будем рисовать акварелью, тушью, пастелью,  маркерами и обязательно захвати хорошее настроение!</p>
-											<img src="images/f-markers.png" alt="">
-											<p>Хотите получить подобный список материалов на E-mail?</p>
-											<a href="#">Да, вышлите список!</a>
-								</div>
-								<div class="item-10">
-											<h1>Расписание занятий</h1>
-											<h2>старт курса - 9.01 / окончание - 11.02<br><span>12 занятий — 2 раза в неделю — по 2 часа</span></h2>
-											<ul>
-												<li class="group-1">ВТ, ЧТ 18:00 - 20:00</li>
-												<li class="group-2">ПТ 19:00 - 21:00</li>
-												<li class="group-3">СБ 16:00 - 18:00</li>
-											</ul>
-											<p>Курс состоит из 12 занятий и длится 5 недель</p>
-								</div>
-								<div class="f-form">
-											<h3>Оставить заявку на курс</h3>
-											<p>Менеджер свяжется с тобой<br> в самое ближайшее время.</p>
-											<form id="application" action="application.php" method="POST" name="application">
+				</div>
+				<div class="sub-item-t3">
+					<div class="title">
+						<p class="title">1+1=СКИДКА<br><span>узнать больше...</span></p>
+					</div>					
+					<div class="info-t3">
+						<ul>
+							<li> При оплате 2х сертификатов  для вас и вашего друга </li>
+							<li>1. Входит полная программа основного </li>
+							<li>2. Скидка при оплате за 2-х людей </li><br>
+							<span style="text-decoration: line-through;">5000грн.</span><br>
+							<span>4000грн.</span>
+						</ul>
+					</div>
+				</div>
+				</div>
+				<img id="pic-3" 	src="images/f-girl-2.png" alt="" style="display: none;">
+				<a name="form" class="f-form">
+				<h3>Оставить заявку на курс</h3>
+				<p>Менеджер свяжется с тобой<br> в самое ближайшее время.</p>
+				<form id="application" action="application.php" method="POST" name="application">
+		
+					<input name="name" id="zayavkaName" maxlength="20" placeholder="Введите ваше имя*" required onkeyup="return proverkaText(this);" onchange="return proverkaText(this);"/>
+					<input name="email" type="email" id="applicationEmail" maxlength="20" placeholder="Введите ваш E-mail" required />
+					<input name="telephone" type="Tel" id="applicationTelephone" maxlength="20" placeholder="Введите ваш телефон*" required onkeyup="return proverka(this);" onchange="return proverka(this);"/>
+		
+					<div class="moreOption">
+						<span>Курс FASHION скетчинг</span><input class="adapt" type="checkbox" name="group[]" value="Хочу записаться на курс FASHION скетчинг"/><br/>
+					</div>
+					<div class="moreOption">
+						<span>Индивидуальное обучение</span><input class="adapt" type="checkbox" name="special[]" value="Хочу записаться на Индивидуальное обучение"/><br/>
+					</div>
+					<button class="applicationButton" type="submit" form="application">Отправить заявку</button>
+		
+				</form>
+			</a>
+			<div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+				<div class="remodalBorder">
+					<p><img src="images/sendico.png"></p>
+					<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+					<form action="mail.php" id="form">
+						<h2 id="modal1Title">Введите свой E-mail</h2>
+						<input name="email" type="email" id="applicationEmail" maxlength="20" placeholder="Введите ваш E-mail*" required />
+						<input type="email" class="putName" name="email" placeholder="Ваш email" required>
+						<input name="phone" type="tel" class="putPhone" placeholder="Введите номер телефона" required>
+						<p id="formStr">Мы отправим список на Ваш E-mail</p>
+						<input type="submit" name="submit" class="btn" value="ОТПРАВИТЬ">
+						<input type="hidden" name="formData" value="Заявка с сайта">
+					</form>
+				</div>
+			</div>
+		</div><!--  end main -->
+		<div id="footer">
+		<div class="second" style="display: none;" >
+				<ul class="social-icons">
+					<li><a href="https://www.instagram.com/sketching_art_hall/" target="_blank"><i class="icon-instagram"></i></a></li>
+					<li><a href="#" target="_blank"><i class="icon-facebook"></i></i></a></li>
+					<li><a href="https://vk.com/arthallkharkov" target="_blank"><i class="icon-vkontakte"></i></a></li>
+					<li><a href="#" target="_blank"><i class="icon-youtube"></i></a></li>
+				</ul>
+			</div>
+			<!-- enter only number -->
+			<script type="text/javascript">
+				function proverka(input) {
+					input.value = input.value.replace(/[^\d,]/g, '');
+				};
+			</script>
+			<script type="text/javascript">
+				function proverkaText(input) {
+					input.value = input.value.replace(/-?[^\d,0-9]*\.?[0-9]+/g, '');
+				};
+			</script>
 
-												<input name="name" id="zayavkaName" maxlength="20" placeholder="Введите ваше имя*" required />
-												<input name="email" type="email" id="applicationEmail" maxlength="20" placeholder="Введите ваш E-mail*" required />
-												<input name="telephone" type="Tel" id="applicationTelephone" maxlength="20" placeholder="Введите ваш телефон" required/>
-
-												<div class="moreOption">
-													<span>Курс FASHION скетчинг</span><input class="adapt" type="checkbox" name="adapt[]" value="Нужна адаптивность"/><br/>
-												</div>
-												<div class="moreOption">
-													<span>Курс INTERIOR скетчинг </span><input class="adapt" type="checkbox" name="adapt[]" value="Нужна адаптивность"/><br/>
-												</div>
-												<div class="moreOption">
-													<span>Курс PAINTING </span><input class="adapt" type="checkbox" name="adapt[]" value="Нужна адаптивность"/><br/>
-												</div>
-												<button class="applicationButton" type="submit" form="application">Отправить заявку</button>
-
-											</form>
-										</div>
-									</div>
-									
-								</div>
-								<div id="footer">
-
-								</div>
-							</div>
-						</body>
-						</html>
+		</div>
+		<a href="#" class="scrollup">Наверх</a>
+	</div>
+		<!-- BEGIN JIVOSITE CODE -->
+<script type='text/javascript'>
+(function(){ var widget_id = 'Ru84NatFGm';var d=document;var w=window;function l(){ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+</script>
+<!-- END JIVOSITE CODE -->
+		<script>
+			$(".sub-item-t1 p.title").click(function(){   
+				$("div").find(".info-t1").toggle(300);
+			});
+			$(".sub-item-t2 p.title").click(function(){   
+				$("div").find(".info-t2").toggle(300);
+			});
+			$(".sub-item-t3 p.title").click(function(){   
+				$("div").find(".info-t3").toggle(300);
+			});
+		</script>
+		<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+		<script src="js/remodal.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+	</html>
