@@ -1,20 +1,18 @@
 $(document).ready(function () {
     $("form").submit(function () {
-        // Получение ID формы
-        var formID = $(this).attr('id');
         // Добавление решётки к имени ID
-        var formNm = $('#' + formID);
+        var formNm = $(this);
         $.ajax({
             type: "POST",
-            url: 'mail.php',
+            url: $(this).attr('action'),
             data: formNm.serialize(),
             success: function (data) {
                 // Вывод текста результата отправки
-                $(formNm).html(data); 
+                formNm.html(data);
             },
             error: function (jqXHR, text, error) {
                 // Вывод текста ошибки отправки
-                $(formNm).html(error);         
+                formNm.html(error);
             }
         });
         return false;

@@ -1,7 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['email'])) {$email = $_POST['email'];}
-    if (isset($_POST['phone'])) {$phone = $_POST['phone'];}
     if (isset($_POST['formData'])) {$formData = $_POST['formData'];}
 
     $to = "anastasiia.seredniia@gmail.com"; /*Укажите адрес, га который должно приходить письмо*/ /*anastasiia.seredniia@gmail.com*/
@@ -10,8 +9,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers .= "Reply-To: ". strip_tags($sendfrom) . "\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html;charset=utf-8 \r\n";
-    $subject = "$formData";
-    $message = "$formData<br> <b>E-mail желающего материалы:</b> $email <br>;
+    $subject = $formData;
+    $message = "$formData<br> <b>E-mail желающего материалы:</b> $email <br>";
     $send = mail ($to, $subject, $message, $headers);
     if ($send == 'true')
     {

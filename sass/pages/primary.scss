@@ -80,6 +80,7 @@ strong {}
 			position: relative;
 			padding: 0 0 20px 0;
 			.social {
+				display: none;
 				position: absolute;
 				left: 50%;
 				bottom: 20px;
@@ -461,6 +462,9 @@ strong {}
 		}
 		#footer {
 			padding: 300px 0 0 0;
+			p{
+				top: -35%;	
+			}
 		}
 	}
 }

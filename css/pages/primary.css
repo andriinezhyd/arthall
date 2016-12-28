@@ -101,6 +101,7 @@ h6 {
       position: relative;
       padding: 0 0 20px 0; }
       #wrapper #header .social {
+        display: none;
         position: absolute;
         left: 50%;
         bottom: 20px;
@@ -372,6 +373,8 @@ h6 {
 /*********************************************   LARGE XXL PC    ***************************************/
 @media (min-width: 1401px) {
   #wrapper #footer {
-    padding: 300px 0 0 0; } }
+    padding: 300px 0 0 0; }
+    #wrapper #footer p {
+      top: -35%; } }
 
 /*# sourceMappingURL=primary.css.map */

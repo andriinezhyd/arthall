@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/remodal.css">
 	<link rel="stylesheet" href="css/remodal-default-theme.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	<!-- <script type="text/javascript" src="js/main.js"></script> -->
 	<title>Fashion</title>
 </head>
 <body>
@@ -41,6 +41,7 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/41782759" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -51,6 +52,21 @@
   ga('send', 'pageview');
 
 </script>
+
+<!-- Create menu -->
+<script>
+	function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+ <!-- end create menu -->
+
+
 	<!--  Создаём кнопку возврата вверх страницы -->
 	<script type="text/javascript">
 		$(document).ready(function(){
@@ -99,7 +115,7 @@
 				<div class="content">
 					<img src="images/f-label.png" alt="">
 					<p><b>СТАРТ КУРСА 9 января</b><br> Курс из 12 занятий для начинающих и практикующих дизайнеров по созданию fashion-скетчей.</p>
-					<a href="#form">Записаться на курс</a>
+					<a href="#data">Записаться на курс</a>
 				</div>					
 			</div>
 			<div class="item-1">
@@ -185,7 +201,7 @@
 					<h1>В РЕЗУЛЬТАТЕ ?</h1>
 					<p>Ты сможешь развить свои навыки рисования, и научиться делать профессиональные счетчи, которые позволят в точности воплощать твои идеи в реальность.</p>
 					<img src="images/f-legs.png" alt="">
-					<a href="#form">Записаться на курс</a>
+					<a href="#data">Записаться на курс</a>
 				</div>
 				<img src="images/f-candies.png" id="pic-8-2" alt="">
 			</div>
@@ -207,7 +223,7 @@
 					<ul>
 						<li class="group-1">ВТ, ЧТ 18:00 - 20:00</li>
 						<li class="group-2">ПТ 19:00 - 21:00, СБ 16:00 - 18:00</li>
-						<li class="group-3">СБ 16:00 - 18:00</li>
+						<!-- <li class="group-3"></li> -->
 					</ul>
 					<p>Курс состоит из 12 занятий и длится 5 недель</p>
 					
@@ -274,7 +290,7 @@
 				</div>
 				</div>
 				<img id="pic-3" 	src="images/f-girl-2.png" alt="" style="display: none;">
-				<a name="form" class="f-form">
+				<a name="data" class="f-form">
 				<h3>Оставить заявку на курс</h3>
 				<p>Менеджер свяжется с тобой<br> в самое ближайшее время.</p>
 				<form id="application" action="application.php" method="POST" name="application">
@@ -299,9 +315,9 @@
 					<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
 					<form action="mail.php" id="form">
 						<h2 id="modal1Title">Введите свой E-mail</h2>
-						<input name="email" type="email" id="applicationEmail" maxlength="20" placeholder="Введите ваш E-mail*" required />
+						<!-- <input name="email" type="email" id="applicationEmail" maxlength="20" placeholder="Введите ваш E-mail*" required /> -->
 						<input type="email" class="putName" name="email" placeholder="Ваш email" required>
-						<input name="phone" type="tel" class="putPhone" placeholder="Введите номер телефона" required>
+						<!-- <input name="phone" type="tel" class="putPhone" placeholder="Введите номер телефона" required> -->
 						<p id="formStr">Мы отправим список на Ваш E-mail</p>
 						<input type="submit" name="submit" class="btn" value="ОТПРАВИТЬ">
 						<input type="hidden" name="formData" value="Заявка с сайта">
@@ -310,7 +326,10 @@
 			</div>
 		</div><!--  end main -->
 		<div id="footer">
-		<div class="second" style="display: none;" >
+			<p>Art-hall — школа творчества и дизайна</p>
+			<p><a href="tel: +380685321982">+38(068)532-19-82</a><br>c 10:00 до 21:00 ВC - выходной</p>
+			<p><a href="https://www.google.com/maps/place/XK+design+studio/@49.9774636,36.2613012,15z/data=!4m5!3m4!1s0x0:0xc78b79db11af682a!8m2!3d49.9761984!4d36.2547299">г.Харьков пр.Гагарина 41/2</a></p>
+			<div class="second">
 				<ul class="social-icons">
 					<li><a href="https://www.instagram.com/sketching_art_hall/" target="_blank"><i class="icon-instagram"></i></a></li>
 					<li><a href="#" target="_blank"><i class="icon-facebook"></i></i></a></li>

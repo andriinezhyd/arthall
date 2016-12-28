@@ -7,7 +7,7 @@
 	<link rel="shortcut icon" href="images/favicon.png" type="image/png">
 	<link rel="stylesheet" href="css/all.css"/>
 	<link rel="stylesheet" href="css/fontello.css">
-	<script type="text/javascript" src="js/main.js"></script>
+	<!-- <script type="text/javascript" src="js/main.js"></script> -->
 </head>
 <body>
 <!-- Yandex.Metrika counter -->
@@ -48,17 +48,28 @@
   ga('send', 'pageview');
 
 </script>
+<!-- Create menu -->
+<script>
+	function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+ <!-- end create menu -->
 	<div id="wrapper">
 		<div id="header">
-		<div class="social">
-		    <ul class="social-icons">
-		        <li><a href="#" target="_blank"><i class="icon-instagram"></i></a></li>
-		        <li><a href="#" target="_blank"><i class="icon-facebook"></i></i></a></li>
-		        <li><a href="https://vk.com/arthallkharkov" target="_blank"><i class="icon-vkontakte"></i></a></li>
-		        <li><a href="#" target="_blank"><i class="icon-youtube"></i></a></li>
-		    </ul>
-		</div>
-
+			<div class="social">
+				<ul class="social-icons">
+					<li><a href="#" target="_blank"><i class="icon-instagram"></i></a></li>
+					<li><a href="#" target="_blank"><i class="icon-facebook"></i></i></a></li>
+					<li><a href="https://vk.com/arthallkharkov" target="_blank"><i class="icon-vkontakte"></i></a></li>
+					<li><a href="#" target="_blank"><i class="icon-youtube"></i></a></li>
+				</ul>
+			</div>
 			<img id="logo" src="images/logo.png" alt="" onClick="window.location='http://art-hall.in.ua/'" style="cursor:pointer">
 			<div class="tel">
 				<p><a href="tel: +380685321982">+38(068)532-19-82</a><br>c 10:00 до 21:00 ВC - выходной</p>
@@ -72,13 +83,11 @@
 			<li><a href="#">живопись</a></li>
 			<li><a href="#contact">контакты</a></li>
 		</ul>
-
 		<div id="main">
 			<div id="content">
-			<img src="images/bg-fashion.png" alt="fashion" class="link-1" onClick="window.location='fashion.html'" style="cursor:pointer">
-			<img src="images/bg-interior.png" alt="interior" class="link-2" onClick="window.location=' '" style="cursor:pointer">
-			<img src="images/bg-painting.png" alt="painting" class="link-3" onClick="window.location=' '" style="cursor:pointer">
-				
+				<img src="images/bg-fashion.png" alt="fashion" class="link-1" onClick="window.location='fashion.html'" style="cursor:pointer">
+				<img src="images/bg-interior.png" alt="interior" class="link-2" onClick="window.location=' '" style="cursor:pointer">
+				<img src="images/bg-painting.png" alt="painting" class="link-3" onClick="window.location=' '" style="cursor:pointer">		
 			</div>
 		</div>
 		<div id="footer">
@@ -86,13 +95,13 @@
 			<p><a href="tel: +380685321982">+38(068)532-19-82</a><br>c 10:00 до 21:00 ВC - выходной</p>
 			<p><a href="https://www.google.com/maps/place/XK+design+studio/@49.9774636,36.2613012,15z/data=!4m5!3m4!1s0x0:0xc78b79db11af682a!8m2!3d49.9761984!4d36.2547299">г.Харьков пр.Гагарина 41/2</a></p>
 			<div class="second">
-		    <ul class="social-icons">
-		        <li><a href="https://www.instagram.com/sketching_art_hall/" target="_blank"><i class="icon-instagram"></i></a></li>
-		        <li><a href="#" target="_blank"><i class="icon-facebook"></i></i></a></li>
-		        <li><a href="https://vk.com/arthallkharkov" target="_blank"><i class="icon-vkontakte"></i></a></li>
-		        <li><a href="#" target="_blank"><i class="icon-youtube"></i></a></li>
-		    </ul>
-		</div>
+				<ul class="social-icons">
+					<li><a href="https://www.instagram.com/sketching_art_hall/" target="_blank"><i class="icon-instagram"></i></a></li>
+					<li><a href="#" target="_blank"><i class="icon-facebook"></i></i></a></li>
+					<li><a href="https://vk.com/arthallkharkov" target="_blank"><i class="icon-vkontakte"></i></a></li>
+					<li><a href="#" target="_blank"><i class="icon-youtube"></i></a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	<!-- BEGIN JIVOSITE CODE -->
